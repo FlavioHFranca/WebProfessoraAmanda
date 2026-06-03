@@ -106,11 +106,11 @@
 
 .btn-cta-nav {
   background: var(--brand-color);
-  color: #0B0F1A;
+  color: #ffffff;
   padding: 10px 22px;
   border-radius: 10px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.2s;
   box-shadow: 0 0 22px rgba(189, 29, 176, 0.35);
@@ -128,6 +128,7 @@
   cursor: pointer;
   padding: 8px;
   display: flex;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -157,7 +158,7 @@
   display: block;
   margin-top: 16px;
   background: var(--brand-color);
-  color: #0B0F1A;
+  color: #ffffff;
   padding: 14px;
   border-radius: 10px;
   font-size: 15px;
@@ -236,15 +237,14 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(189, 29, 176, 0.1);
   border: 1px solid rgba(189, 29, 176, 0.25);
   border-radius: 100px;
   padding: 6px 16px;
-  margin-bottom: 28px;
+  margin: 40px 0;
 }
 
 .hero-badge-text {
-  color: var(--brand-color);
+  color: #F1F5F9;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -253,7 +253,7 @@
 
 .hero-headline {
   color: #F1F5F9;
-  font-size: clamp(36px, 5vw, 58px);
+  font-size: clamp(36px, 3vw, 52px);
   font-weight: 800;
   line-height: 1.08;
   letter-spacing: -0.04em;
@@ -261,7 +261,7 @@
 }
 
 .hero-headline-gradient {
-  background: linear-gradient(135deg, #A307E5 100%);
+  background: linear-gradient(135deg, var(--brand-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -293,7 +293,7 @@
   align-items: center;
   gap: 8px;
   background: var(--brand-color);
-  color: #0B0F1A;
+  color: #ffffff;
   padding: 14px 28px;
   border-radius: 12px;
   font-size: 15px;
@@ -305,9 +305,9 @@
 }
 
 .btn-hero-primary:hover {
-  box-shadow: 0 0 44px rgba(189, 29, 176, 0.65), 0 4px 28px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 44px rgba(89, 29, 176, 0.65), 0 4px 28px rgba(0, 0, 0, 0.4);
   transform: translateY(-2px);
-  color: #ffffff;
+  color: #e4e4e4;
 }
 
 .btn-hero-secondary {
@@ -340,6 +340,7 @@
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.07);
+  margin-top: 25px;
 }
 
 .hero-stat-card {

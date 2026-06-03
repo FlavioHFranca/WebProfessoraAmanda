@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Code2, Menu, X } from 'lucide-react';
+import { Users, Code, CircleCheckBig, } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Jornada', href: '#jornada' },
@@ -50,10 +51,10 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#combos"
+            href="https://api.whatsapp.com/send/?phone=5565996415991&text=Quero+uma+mentoria+especializada+da+professora+Amanda!+(TESTE)!&type=phone_number&app_absent="
             className="btn-cta-nav"
           >
-            Iniciar Agora →
+            Agendar uma Aula
           </a>
         </div>
 
@@ -84,11 +85,11 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#combos"
+            href="https://api.whatsapp.com/send/?phone=5565996415991&text=Quero+uma+mentoria+especializada+da+professora+Amanda!+(TESTE)!&type=phone_number&app_absent="
             onClick={() => setMobileOpen(false)}
             className="mobile-cta"
           >
-            Iniciar Agora →
+            Agendar uma Aula
           </a>
         </div>
       )}

@@ -45,7 +45,7 @@ export function AuthoritySection() {
           <div className="col-span-1 lg:col-span-4 photo-card">
             <div className="photo-wrapper">
               <ImageWithFallback
-                src=".\src\styles\img\AUTORIDADE.png"
+                src=".\src\styles\img\sobreela.png"
                 alt="Prof. Amanda Xavier"
                 className="photo-img"
               />

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, Zap } from 'lucide-react';
+import { Users, Code, CircleCheckBig, } from 'lucide-react';
 
 const TERMINAL_LINES = [
   { delay: 0, text: '$ python jornada_engenharia.py', color: '#079e34ff' },
   { delay: 600, text: '', color: '#94A3B8' },
   { delay: 900, text: 'Iniciando programa...', color: '#64748B' },
-  { delay: 1400, text: '✓ Bloco 1: Lógica de Programação', color: '#A307E5' },
-  { delay: 1900, text: '✓ Bloco 2: Python Estruturado', color: '#A307E5' },
-  { delay: 2400, text: '✓ Bloco 3: Web com Django', color: '#A307E5' },
-  { delay: 2900, text: '✓ Bloco 4: AI & Data Science', color: '#A307E5' },
+  { delay: 1400, text: '✓ Bloco 1: Lógica de Programação', color: 'var(--brand-color)' },
+  { delay: 1900, text: '✓ Bloco 2: Python Estruturado', color: 'var(--brand-color)' },
+  { delay: 2400, text: '✓ Bloco 3: Web com Django', color: 'var(--brand-color)' },
+  { delay: 2900, text: '✓ Bloco 4: AI & Data Science', color: 'var(--brand-color)' },
   { delay: 3400, text: '', color: '#94A3B8' },
-  { delay: 3700, text: 'Status: Vagas disponíveis para próxima turma ', color: '#08df4fff' },
+  { delay: 3700, text: 'Status: Vagas disponíveis para próxima turma ', color: '#079e34ff' },
 ];
 
 const STATS = [
@@ -83,59 +83,38 @@ export function HeroSection() {
         <div className="hero-layout-grid">
           {/* Left content */}
           <div>
-            {/* Badge */}
+            
             <div className="hero-badge">
-              <Zap size={14} color="#BD1DB0" fill="#BD1DB0" />
-              <span className="hero-badge-text">
-                Mentoria em Programação do Zero
-              </span>
             </div>
-
             {/* Headline */}
             <h1 className="hero-headline">
-              Transforme sua
+              Programação Sem Complicação, com uma
               <br />
               <span className="hero-headline-gradient">
-                curiosidade
-              </span>{' '}
-              em
-              <br />
-              código
-              <br />
-              hoje mesmo
+                Professora Reconhecida pela Didática
+              </span>
+              
             </h1>
 
             {/* Subtext */}
             <p className="hero-subtext">
-              Uma jornada em{' '}
-              <span className="hero-subtext-highlight">4 blocos progressivos</span>{' '}
-              — do zero absoluto à especialização em Web ou Data Science. Com a Prof. Amanda Xavier,
-              você não aprende apenas a programar, você pensa como engenheira.
+              Aulas particulares de tecnologia para,  
+              <span className="hero-subtext-highlight"> iniciantes e universitários</span>{' '}
+              com explicações claras, paciência e foco total no seu reu ritmo de aprendizagem.{' '}
             </p>
 
             {/* CTAs */}
             <div className="hero-cta-group">
-              <a href="#combos" className="btn-hero-primary">
-                Iniciar minha Jornada <ArrowRight size={18} />
+              <a href="https://api.whatsapp.com/send/?phone=5565996415991&text=Quero+uma+mentoria+especializada+da+professora+Amanda!+(TESTE)!&type=phone_number&app_absent=" className="btn-hero-primary">
+                <Code size={18} />Quero Agendar uma Aula
               </a>
-              <a href="#jornada" className="btn-hero-secondary">
-                Ver a Jornada
+              <a href="https://chat.whatsapp.com/KHvRMshZNx6KyOTYD4qRbx" className="btn-hero-secondary">
+                <Users size={18} />Lista de Espera
               </a>
             </div>
 
             {/* Stats bar */}
-            <div className="hero-stats-bar">
-              {STATS.map((stat, i) => (
-                <div key={i} className="hero-stat-card">
-                  <div className="hero-stat-value">
-                    {stat.value}
-                  </div>
-                  <div className="hero-stat-label">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
+            
           </div>
 
           {/* Right content — Terminal */}
@@ -147,21 +126,43 @@ export function HeroSection() {
               <div className="terminal-decoration-group">
                 <div className="terminal-decoration-item">
                   <div className="terminal-status-dot" />
-                  <span className="terminal-status-text">
-                    Próxima turma:{' '}
-                    <span className="terminal-status-highlight">Vagas Abertas</span>
-                  </span>
+                  
                 </div>
                 <div className="terminal-tag">
                   <span style={{ color: '#64748B', fontSize: '12px', fontFamily: 'monospace' }}>
-                    <span style={{ color: '#F59E0B' }}>⚡</span> Online
+                    
                   </span>
                 </div>
               </div>
+              <div className="hero-badge">
+              <CircleCheckBig size={20} color="#13f622"  />
+              <span className="hero-badge-text">
+                Primeira Aula Experimental | Horários Flexíveis
+              </span>
+        </div>
+              {/* <div className="hero-stats-bar">
+              {STATS.map((stat, i) => (
+                <div key={i} className="hero-stat-card">
+                  <div className="hero-stat-value">
+                    {stat.value}
+                  </div>
+                  <div className="hero-stat-label">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div> */}
             </div>
           </div>
         </div>
+        {/* <div className="hero-badge">
+              <CircleCheckBig size={20} color="#13f622"  />
+              <span className="hero-badge-text">
+                Primeira Aula Experimental | Horários Flexíveis
+              </span>
+        </div> */}
       </div>
     </section>
+    
   );
 }
