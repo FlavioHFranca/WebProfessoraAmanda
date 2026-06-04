@@ -65,7 +65,7 @@ const BLOCKS = [
     code: ['# Fundamentos da mente do dev', 'def resolver(problema):', "    return logica.aplicar(problema)", '', '# ✓ Pronto para o próximo nível'],
     accent: '#BD1DB0',
     colSpan: 'lg:col-span-7',
-    tag: 'Foundation Layer',
+    tag: 'Fundamento Computacional',
   },
   {
     number: '02',
@@ -80,7 +80,7 @@ const BLOCKS = [
     code: ['class Engineer:', '  def __init__(self):', '    self.ready = True', '', '# ✓ 200 OK'],
     accent: '#3B82F6',
     colSpan: 'lg:col-span-5',
-    tag: 'Core Language',
+    tag: 'Introdução a Linguagem',
   },
   {
     number: '03',
@@ -108,10 +108,10 @@ const BLOCKS = [
       { label: 'Pandas / NumPy', value: 94 },
       { label: 'Modelos de IA', value: 79 },
     ],
-    code: ['model.fit(X_train, y_train)', 'score = model.score(X_test)', 'print(f"Acurácia: {score:.1%}")', '# Acurácia: 94.7% ✓'],
+    code: [''],
     accent: '#F59E0B',
     colSpan: 'lg:col-span-7',
-    tag: 'AI / ML Layer',
+    tag: 'Inteligência Artificial',
   },
 ];
 

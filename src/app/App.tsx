@@ -14,8 +14,8 @@ export default function App() {
     <div className="app-root">
       <Navbar />
       <HeroSection />
-      <JourneySection />
       <AuthoritySection />
+      <JourneySection />
       <SocialProofSection />
       <PricingSection />
       <FAQSection />
