@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Code2, Instagram, Linkedin, Mail, FileUser } from 'lucide-react';
 
 const FOOTER_LINKS = [
   {
@@ -31,10 +31,10 @@ const FOOTER_LINKS = [
 ];
 
 const SOCIALS = [
-  { Icon: Instagram, href: '#', label: 'Instagram' },
-  { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { Icon: Github, href: '#', label: 'GitHub' },
-  { Icon: Mail, href: '#', label: 'Email' },
+  { Icon: Instagram, href: 'https://www.instagram.com/prof.amanda.xavier/', label: 'Instagram' },
+  { Icon: Linkedin, href: 'https://www.linkedin.com/in/prof-amanda-xavier/', label: 'LinkedIn' },
+  { Icon: FileUser, href: 'https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8189271J3', label: 'Lattes' },
+  { Icon: Mail, href: 'mailto:[EMAIL_ADDRESS]', label: 'Email' },
 ];
 
 export function Footer() {
@@ -46,7 +46,7 @@ export function Footer() {
           <div className="footer-brand-col">
             <div className="footer-logo-row">
               <div className="footer-logo-box">
-                <Code2 size={18} color="#0B0F1A" strokeWidth={2.5} />
+                <img src="./src/styles/img/logo_branca_amanda.png" alt="Logo" />
               </div>
               <div>
                 <div className="footer-brand-name">
@@ -58,16 +58,9 @@ export function Footer() {
               </div>
             </div>
             <p className="footer-brand-desc">
-              Transformando curiosidade em engenharia de software, um bloco de cada vez. Do zero à especialização.
+              Transformo desafios complexos em código claro. O foco é a sua capacidade de pensar, não de copiar.
             </p>
 
-            {/* Terminal info */}
-            <div className="footer-terminal-box">
-              <div className="footer-terminal-line">$ system_status</div>
-              <div className="footer-terminal-success">✓ Programa: Ativo</div>
-              <div className="footer-terminal-success">✓ Vagas: Abertas</div>
-              <div className="footer-terminal-line">$ _</div>
-            </div>
           </div>
 
           {/* Links columns */}
@@ -108,10 +101,10 @@ export function Footer() {
               ))}
             </div>
             <a
-              href="mailto:contato@amandaxavier.dev"
+              href="mailto:[EMAIL_ADDRESS]"
               className="footer-email-link"
             >
-              contato@amandaxavier.dev
+              [EMAIL_ADDRESS]
             </a>
           </div>
         </div>

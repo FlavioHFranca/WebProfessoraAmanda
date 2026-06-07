@@ -48,13 +48,13 @@
 }
 
 .logo-icon-bg {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--brand-color);
+  /* background: var(--brand-color); */
 }
 
 .brand-info {
@@ -1779,14 +1779,13 @@
 }
 
 .footer-logo-box {
-  width: 36px;
-  height: 36px;
-  background: var(--brand-color);
+  width: 45px;
+  height: 45px;
+  /* background: var(--brand-color); */
   border-radius: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 16px rgba(189, 29, 176, 0.35);
 }
 
 .footer-brand-name {

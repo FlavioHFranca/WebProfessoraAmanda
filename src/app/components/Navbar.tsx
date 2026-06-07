@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Code2, Menu, X } from 'lucide-react';
 import { Users, Code, CircleCheckBig, } from 'lucide-react';
+import logoAmanda from '@/styles/img/logo_branca_amanda.png';
 
 const NAV_LINKS = [
   { label: 'Jornada', href: '#jornada' },
@@ -26,7 +27,7 @@ export function Navbar() {
         <a href="#" className="logo-link">
           <div className="logo-container">
             <div className="logo-icon-bg">
-              <img src=".\src\styles\img\logo_branca_amanda.png" alt="Logo" />
+              <img src={logoAmanda} alt="Logo Prof. Amanda Xavier" className="h-8 w-auto" />
             </div>
             <div className="brand-info">
               <div className="brand-name">
