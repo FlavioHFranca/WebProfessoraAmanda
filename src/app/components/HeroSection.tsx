@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Users, Code, CircleCheckBig, } from 'lucide-react';
+import fotoHero from '@/styles/img/chamandoAluno.png';
 
 const TERMINAL_LINES = [
   { delay: 0, text: '$ python jornada_engenharia.py', color: '#079e34ff' },
@@ -46,7 +47,9 @@ function TerminalWindow() {
       {/* Terminal body */}
       <div className="terminal-body">
         <div className="img-professora-chamando-aluno" style={{ width: '100%', height: '100%'}}>
-          <img src=".\src\styles\img\chamandoAluno.png" alt="Amanda da Silva Xavier" />
+          <img src={fotoHero} 
+          alt="Professora Amanda Xavier ensinando programação" 
+          className="w-full h-auto rounded-lg shadow-lg"/>
           
         </div>
         {visibleLines.length > 0 && (

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Award, BookOpen, Users, Star, ExternalLink } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import fotoSobreEla from '@/styles/img/sobreela.png';
 
 const METRICS = [
   { icon: BookOpen, label: 'Formação', value: 'Dra. em Ciência da Computação', sub: 'UFPE — Universidade Federal de Pernambuco' },
   { icon: Users, label: 'Alunos Formados', value: '150+', sub: 'Em toda trajetória acadêmica' },
-  { icon: Star, label: 'Avaliação', value: '4.7 / 5.0', sub: 'Média geral do programa' },
+  { icon: Star, label: 'Avaliação', value: '5 / 5.0', sub: 'Média geral do programa' },
   { icon: Award, label: 'Experiência', value: '4+ Anos', sub: 'Indústria & Ensino' },
 ];
 
@@ -40,8 +41,8 @@ export function AuthoritySection() {
           {/* Photo card */}
           <div className="col-span-1 lg:col-span-4 photo-card">
             <div className="photo-wrapper">
-              <ImageWithFallback
-                src=".\src\styles\img\sobreela.png"
+              <img
+                src={fotoSobreEla}
                 alt="Prof. Amanda Xavier"
                 className="photo-img"
               />

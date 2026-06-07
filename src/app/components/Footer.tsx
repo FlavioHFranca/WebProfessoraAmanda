@@ -1,5 +1,6 @@
 import React from 'react';
 import { Code2, Instagram, Linkedin, Mail, FileUser } from 'lucide-react';
+import logoAmanda from '@/styles/img/logo_branca_amanda.png'
 
 const FOOTER_LINKS = [
   {
@@ -46,7 +47,7 @@ export function Footer() {
           <div className="footer-brand-col">
             <div className="footer-logo-row">
               <div className="footer-logo-box">
-                <img src="./src/styles/img/logo_branca_amanda.png" alt="Logo" />
+                <img src={logoAmanda} alt="Logo Prof. Amanda Xavier" className="h-8 w-auto"/>
               </div>
               <div>
                 <div className="footer-brand-name">
