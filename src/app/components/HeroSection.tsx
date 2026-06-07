@@ -40,27 +40,15 @@ function TerminalWindow() {
           <div className="terminal-dot dot-yellow" />
           <div className="terminal-dot dot-green" />
         </div>
-        <span className="terminal-title">
-          ~/mentoria/jornada.py
-        </span>
+        
       </div>
 
       {/* Terminal body */}
       <div className="terminal-body">
-        {TERMINAL_LINES.map((line, i) => (
-          <div
-            key={i}
-            className="terminal-line"
-            style={{
-              opacity: visibleLines.includes(i) ? 1 : 0,
-              transform: visibleLines.includes(i) ? 'translateY(0)' : 'translateY(4px)',
-              transition: 'all 0.3s ease',
-              color: line.color,
-            }}
-          >
-            {line.text || '\u00A0'}
-          </div>
-        ))}
+        <div className="img-professora-chamando-aluno" style={{ width: '100%', height: '100%'}}>
+          <img src=".\src\styles\img\chamandoAluno.png" alt="Amanda da Silva Xavier" />
+          
+        </div>
         {visibleLines.length > 0 && (
           <span className="terminal-cursor" />
         )}
@@ -105,10 +93,10 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="hero-cta-group">
-              <a href="https://api.whatsapp.com/send/?phone=5565996415991&text=Quero+uma+mentoria+especializada+da+professora+Amanda!+(TESTE)!&type=phone_number&app_absent=" className="btn-hero-primary">
+              <a href="https://api.whatsapp.com/send/?phone=5565996415991&text=Quero+uma+mentoria+especializada+da+professora+Amanda!&type=phone_number&app_absent=" className="btn-hero-primary" target="_blank">
                 <Code size={18} />Quero Agendar uma Aula
               </a>
-              <a href="https://chat.whatsapp.com/KHvRMshZNx6KyOTYD4qRbx" className="btn-hero-secondary">
+              <a href="https://chat.whatsapp.com/KHvRMshZNx6KyOTYD4qRbx" className="btn-hero-secondary" target="_blank">
                 <Users size={18} />Lista de Espera
               </a>
             </div>

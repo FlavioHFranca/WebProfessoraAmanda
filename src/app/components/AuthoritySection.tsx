@@ -26,15 +26,11 @@ export function AuthoritySection() {
       <div className="authority-container">
         {/* Section header */}
         <div className="authority-header">
-          <div className="authority-badge">
-            <span className="authority-badge-text">
-              Sua Mentora
-            </span>
-          </div>
+
           <h2 className="authority-title">
             Quem vai te guiar nessa{' '}
             <span className="authority-title-highlight">
-              jornada
+              jornada?
             </span>
           </h2>
         </div>
@@ -94,7 +90,7 @@ export function AuthoritySection() {
               <div className="metrics-header">
                 <div className="metrics-dot" />
                 <span className="metrics-title">
-                  system_metrics.json
+                  Dados_da_Mentora.JSON
                 </span>
               </div>
 
@@ -104,7 +100,7 @@ export function AuthoritySection() {
                   return (
                     <div key={i} className="metric-item-card">
                       <div className="metric-icon-box">
-                        <Icon size={16} color="#A307E5" />
+                        <Icon size={22} color="#a867d1" />
                       </div>
                       <div>
                         <div className="metric-label">
@@ -126,7 +122,7 @@ export function AuthoritySection() {
               <div className="metrics-header">
                 <div className="metrics-dot" />
                 <span className="metrics-title">
-                  career_history.log
+                  Histórico_Profissional.log
                 </span>
               </div>
 
@@ -142,7 +138,7 @@ export function AuthoritySection() {
                       <div
                         className="timeline-dot"
                         style={{
-                          background: i === EXPERIENCE.length - 1 ? '#BD1DB0' : 'rgba(255,255,255,0.15)',
+                          background: i === EXPERIENCE.length - 1 ? '#77126fff' : 'rgba(255,255,255,0.15)',
                           border: i === EXPERIENCE.length - 1 ? '2px solid rgba(189,29,176,0.4)' : '2px solid rgba(255,255,255,0.1)',
                           boxShadow: i === EXPERIENCE.length - 1 ? '0 0 10px rgba(189,29,176,0.5)' : 'none',
                         }}

@@ -4,13 +4,13 @@ import { Check, Globe, Brain, ArrowRight, Shield, Zap, GitBranch, Terminal } fro
 const TIERS = [
   {
     id: 'web',
-    tag: 'Deployment Package — Web',
+    tag: 'Jornada Web',
     name: 'Jornada Web',
     description: 'Para quem quer construir aplicações web completas e trabalhar como desenvolvedor full-stack.',
     price: 'R$ 997',
     installment: '12x R$ 97',
     icon: Globe,
-    accentColor: '#BD1DB0',
+    accentColor: '#a867d1',
     glowColor: 'rgba(189,29,176,0.25)',
     featured: false,
     blocks: [
@@ -27,17 +27,17 @@ const TIERS = [
       'Certificado de conclusão',
       'Acesso vitalício ao conteúdo',
     ],
-    cta: 'Deploy Jornada Web',
+    cta: 'Quero a Jornada Web',
   },
   {
     id: 'dados',
-    tag: 'Deployment Package — Data',
-    name: 'Jornada Dados',
+    tag: 'Jornada de Dados',
+    name: 'Jornada de Dados',
     description: 'Para quem quer dominar Inteligência Artificial e se tornar especialista em Data Science.',
     price: 'R$ 1.197',
     installment: '12x R$ 117',
     icon: Brain,
-    accentColor: '#BD1DB0',
+    accentColor: '#a867d1',
     glowColor: 'rgba(189,29,176,0.25)',
     featured: true,
     blocks: [
@@ -55,7 +55,7 @@ const TIERS = [
       'Acesso vitalício ao conteúdo',
       'Sessão 1:1 com a Prof. Amanda',
     ],
-    cta: 'Deploy Jornada Dados',
+    cta: 'Quero a Jornada de Dados',
   },
 ];
 
@@ -70,15 +70,10 @@ export function PricingSection() {
       <div className="pricing-container">
         {/* Section header */}
         <div className="pricing-header">
-          <div className="pricing-badge">
-            <span className="pricing-badge-text">
-              Escolha seu Stack
-            </span>
-          </div>
           <h2 className="pricing-title">
-            Deployment{' '}
+            Escolha sua{' '}
             <span className="pricing-title-highlight">
-              Packages
+              Jornada
             </span>
           </h2>
           <p className="pricing-subtitle">
@@ -106,21 +101,15 @@ export function PricingSection() {
                 {/* Featured badge */}
                 {tier.featured && (
                   <div className="featured-badge">
-                    ⚡ Mais Completa
+                    Mais Completa
                   </div>
                 )}
 
                 {/* Header */}
                 <div className="pricing-card-header">
-                  <div className="pricing-tag-box">
-                    <span className="pricing-tag-text">
-                      {tier.tag}
-                    </span>
-                  </div>
-
                   <div className="pricing-title-row">
                     <div className="pricing-icon-box">
-                      <Icon size={24} color={tier.accentColor} />
+                      <Icon size={40} color={tier.accentColor} />
                     </div>
                     <h3 className="pricing-card-title">
                       {tier.name}
@@ -154,20 +143,6 @@ export function PricingSection() {
 
                 {/* Divider */}
                 <div className="pricing-card-divider" />
-
-                {/* Price */}
-                <div className="price-container">
-                  <div className="price-main-row">
-                    <span className="price-value-text">
-                      {tier.price}
-                    </span>
-                    <span className="price-label-small">à vista</span>
-                  </div>
-                  <span className="installment-text">
-                    ou {tier.installment} sem juros
-                  </span>
-                </div>
-
                 {/* Features */}
                 <div className="features-container">
                   {tier.features.map((feat, i) => (
@@ -177,7 +152,7 @@ export function PricingSection() {
                       style={{ borderBottom: i < tier.features.length - 1 ? '1px solid rgba(255,255,255,0.04)' : 'none' }}
                     >
                       <div className="feature-check-box">
-                        <Check size={10} color={tier.accentColor} strokeWidth={3} />
+                        <Check size={15} color={tier.accentColor} strokeWidth={3} />
                       </div>
                       <span className="feature-text-content">{feat}</span>
                     </div>
@@ -201,7 +176,7 @@ export function PricingSection() {
 
                 {/* Security note */}
                 <div className="security-tag">
-                  <Shield size={12} color="#64748B" />
+                  <Shield size={18} color="#64748B" />
                   <span className="security-text">Garantia de 7 dias • Pagamento seguro</span>
                 </div>
               </div>
@@ -211,14 +186,15 @@ export function PricingSection() {
 
         {/* Bottom note */}
         <div className="pricing-footer-note">
-          <div className="pricing-footer-badge-box">
-            <Zap size={14} color="#F59E0B" />
+          <a href="https://api.whatsapp.com/send/?phone=5565996415991&text=Quero+uma+mentoria+especializada+da+professora+Amanda!&type=phone_number&app_absent=" target="_blank" rel="noopener noreferrer">
+            <div className="pricing-footer-badge-box">
             <span className="pricing-footer-text-info">
-              Precisa dos{' '}
-              <span className="pricing-footer-highlight">4 blocos completos</span>
-              ? Fale conosco para uma proposta personalizada.
+              Precisa{' '}
+              <span className="pricing-footer-highlight">4 blocos completos </span>
+              ? Fale diretamente pelo WhatsApp para uma proposta personalizada.
             </span>
           </div>
+          </a>
         </div>
       </div>
     </section>

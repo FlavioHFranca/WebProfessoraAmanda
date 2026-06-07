@@ -4,12 +4,9 @@ import { Plus, Minus } from 'lucide-react';
 const FAQ_ITEMS = [
   {
     question: 'Preciso ter experiência prévia em programação para começar?',
-    answer: 'Não, absolutamente. O Bloco 1 foi desenhado especificamente para quem nunca programou. Começamos do zero — do pensamento computacional e lógica — antes de escrever qualquer linha de código. Se você sabe usar um computador, já tem o suficiente para começar.',
+    answer: 'Não. O Bloco 1 foi desenhado especificamente para quem nunca programou. Começamos do zero — do pensamento computacional e lógica — antes de escrever qualquer linha de código. Se você sabe usar um computador, já tem o suficiente para começar.',
   },
-  {
-    question: 'Qual é a duração total do programa?',
-    answer: 'A Jornada Web tem duração de aproximadamente 6 meses, com dedicação média de 1h a 1h30 por dia. A Jornada Dados tem duração de 7 meses. O ritmo é guiado por você — o conteúdo fica disponível para sempre.',
-  },
+  
   {
     question: 'As aulas são ao vivo ou gravadas?',
     answer: 'O conteúdo principal é 100% gravado e disponível para assistir quando e onde quiser. As sessões de mentoria em grupo são ao vivo, quinzenais, e sempre gravadas para quem não puder participar na hora.',
@@ -28,11 +25,11 @@ const FAQ_ITEMS = [
   },
   {
     question: 'O suporte é individual com a Prof. Amanda?',
-    answer: 'O suporte principal é feito através da comunidade no Discord, com monitores especializados em cada bloco. A Jornada Dados inclui 1 sessão individual de 30min com a Prof. Amanda. Também há mentorias em grupo quinzenais com a Amanda para todos os alunos.',
+    answer: 'Sim, o suporte principal é feito por mim! Há também mentorias em grupo quinzenais para todos os alunos.',
   },
   {
     question: 'Posso migrar de uma jornada para outra depois?',
-    answer: 'Sim! Se você adquiriu a Jornada Web e quiser adicionar o Bloco 4 (AI/Data Science) depois, oferecemos a possibilidade de upgrade pagando apenas a diferença entre os pacotes. Fale com a equipe.',
+    answer: 'Sim! Se você adquiriu a Jornada Web e quiser adicionar o Bloco 4 (AI/Data Science) depois, oferecemos a possibilidade de upgrade pagando apenas a diferença entre os pacotes.',
   },
 ];
 
@@ -55,7 +52,7 @@ function AccordionItem({ question, answer, isOpen, onToggle, index }: AccordionI
           {/* Index number */}
           <span
             className="faq-accordion-index"
-            style={{ color: isOpen ? '#BD1DB0' : '#64748B' }}
+            style={{ color: isOpen ? '#a867d1' : '#64748B' }}
           >
             {String(index + 1).padStart(2, '0')}
           </span>
@@ -69,15 +66,12 @@ function AccordionItem({ question, answer, isOpen, onToggle, index }: AccordionI
 
         <div
           className="faq-accordion-icon-box"
-          style={{
-            background: isOpen ? 'rgba(189,29,176,0.15)' : 'rgba(255,255,255,0.04)',
-            border: `1px solid ${isOpen ? 'rgba(189,29,176,0.3)' : 'rgba(255,255,255,0.08)'}`,
-          }}
+          
         >
           {isOpen ? (
-            <Minus size={14} color="#BD1DB0" />
+            <Minus size={20} color="#a867d1" />
           ) : (
-            <Plus size={14} color="#64748B" />
+            <Plus size={20} color="#64748B" />
           )}
         </div>
       </button>
@@ -105,11 +99,6 @@ export function FAQSection() {
       <div className="faq-container">
         {/* Section header */}
         <div className="faq-header">
-          <div className="faq-badge-box">
-            <span className="faq-badge-text-info">
-              FAQ
-            </span>
-          </div>
           <h2 className="faq-main-title">
             Perguntas{' '}
             <span className="faq-title-gradient-text">

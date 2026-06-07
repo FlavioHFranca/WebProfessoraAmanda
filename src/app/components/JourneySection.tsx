@@ -5,21 +5,11 @@ interface ProgressBarProps {
   label: string;
   value: number;
 }
-function ProgressBar({ label, value }: ProgressBarProps) {
+function ProgressBar({ label }: ProgressBarProps) {
   return (
     <div className="progress-item">
       <div className="progress-info">
-        <span className="progress-label">{label}</span>
-        <span className="progress-value">{value}%</span>
-      </div>
-      <div className="progress-track">
-        <div
-          className="progress-fill"
-          style={{
-            width: `${value}%`,
-            background: 'linear-gradient(90deg, #BD1DB0, #D038CB)',
-          }}
-        />
+          <span className="progress-label">{label}</span>
       </div>
     </div>
   );
@@ -39,7 +29,7 @@ function CodeSnippet({ code }: CodeSnippetProps) {
             key={i}
             className="code-line"
             style={{
-              color: isSuccess ? '#BD1DB0' : isComment ? '#64748B' : '#94A3B8',
+              color: isSuccess ? '#a867d1' : isComment ? '#08a337ff' : '#d2d6dbff',
             }}
           >
             {line || '\u00A0'}
@@ -58,9 +48,9 @@ const BLOCKS = [
     title: 'Lógica de Programação',
     desc: 'Base sólida em lógica computacional, algoritmos, estruturas de dados e raciocínio analítico para resolver qualquer problema.',
     skills: [
-      { label: 'Algoritmos', value: 92 },
-      { label: 'Estruturas de Dados', value: 85 },
-      { label: 'Lógica Booleana', value: 100 },
+      { label: 'Algoritmos'},
+      { label: 'Estruturas de Dados'},
+      { label: 'Lógica Booleana'},
     ],
     code: ['# Fundamentos da mente do dev', 'def resolver(problema):', "    return logica.aplicar(problema)", '', '# ✓ Pronto para o próximo nível'],
     accent: '#BD1DB0',
@@ -95,7 +85,7 @@ const BLOCKS = [
     code: ['@login_required', 'def dashboard(req):', '    # 200 OK ✓', '    return render(...)'],
     accent: '#8B5CF6',
     colSpan: 'lg:col-span-5',
-    tag: 'Full-Stack',
+    tag: 'Backend',
   },
   {
     number: '04',
@@ -104,11 +94,11 @@ const BLOCKS = [
     title: 'AI & Data Science',
     desc: 'Mergulhe em Machine Learning, análise de dados com Pandas e modelos de Inteligência Artificial aplicados ao mercado real.',
     skills: [
-      { label: 'Machine Learning', value: 87 },
-      { label: 'Pandas / NumPy', value: 94 },
-      { label: 'Modelos de IA', value: 79 },
+      { label: 'Machine Learning'},
+      { label: 'Pandas / NumPy'},
+      { label: 'Modelos de IA'},
     ],
-    code: [''],
+    code: ['model.fit(X_train, y_train)', 'score = model.score(X_test)', 'print(f"Acurácia: {score:.1%}")', '# Acurácia: 94.7% ✓'],
     accent: '#F59E0B',
     colSpan: 'lg:col-span-7',
     tag: 'Inteligência Artificial',
@@ -124,14 +114,10 @@ export function JourneySection() {
       <div className="journey-container">
         {/* Section header */}
         <div className="journey-header">
-          <div className="journey-badge">
-            <span className="journey-badge-text">
-              Sistema de Aprendizado
-            </span>
-          </div>
+          
           <div className="journey-header-row">
             <h2 className="journey-title">
-              A Jornada em{' '}
+              Sistema de Aprendizado em {' '}
               <span className="journey-title-highlight">
                 4 Blocos
               </span>
@@ -164,13 +150,9 @@ export function JourneySection() {
                 <div className="bento-header">
                   <div className="bento-icon-group">
                     <div
-                      className="bento-icon-box"
-                      style={{
-                        background: `${block.accent}18`,
-                        border: `1px solid ${block.accent}30`,
-                      }}
+                        className="bento-icon-box"
                     >
-                      <Icon size={20} color={block.accent} />
+                          <Icon size={32} color={block.accent} />
                     </div>
                     <div>
                       <div
@@ -215,12 +197,9 @@ export function JourneySection() {
                 {/* Progress bars */}
                 <div>
                   {block.skills.map((skill) => (
-                    <ProgressBar key={skill.label} label={skill.label} value={skill.value} />
+                    <ProgressBar key={skill.label} label={skill.label} value={0}/>
                   ))}
-                </div>
-
-                {/* Code snippet */}
-                <CodeSnippet code={block.code} />
+                  </div>
               </div>
             );
           })}
@@ -231,7 +210,7 @@ export function JourneySection() {
           <div className="journey-footer-badge">
             <div className="journey-footer-dot" />
             <span className="journey-footer-text">
-              4 blocos • +120h de conteúdo •{' '}
+              4 blocos | +120h de conteúdo  | {' '}
               <span className="journey-footer-highlight">Projetos reais em cada etapa</span>
             </span>
           </div>

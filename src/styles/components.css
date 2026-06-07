@@ -233,6 +233,20 @@
   }
 }
 
+.img-professora-chamando-aluno {
+  
+  width: 550px;
+  height: 550px;
+}
+.img-professora-chamando-aluno img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  pointer-events: none;
+  border: 3px solid var(--brand-color);
+  box-shadow: 0 0 28px rgba(189, 29, 176, 0.4), 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
@@ -430,7 +444,7 @@
 }
 
 .journey-title-highlight {
- background: linear-gradient(135deg, #A307E5 100%);
+ background: linear-gradient(135deg, var(--brand-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -561,7 +575,7 @@
 }
 
 .progress-label {
-  color: #64748B;
+  color: #cacaca;
   font-size: 11px;
   font-family: monospace;
 }
@@ -612,8 +626,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(189, 29, 176, 0.07);
-  border: 1px solid rgba(189, 29, 176, 0.15);
   border-radius: 100px;
   padding: 10px 22px;
 }
@@ -628,7 +640,7 @@
 
 .journey-footer-text {
   color: #94A3B8;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -673,7 +685,6 @@
 .authority-badge {
   display: inline-flex;
   align-items: center; gap: 8px;
-  background: rgba(189, 29, 176, 0.08);
   border: 1px solid rgba(189, 29, 176, 0.2);
   border-radius: 100px;
   padding: 5px 14px;
@@ -682,7 +693,7 @@
 
 .authority-badge-text {
   color: var(--brand-color);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -698,7 +709,7 @@
 }
 
 .authority-title-highlight {
-  background: linear-gradient(135deg, #A307E5 100%);
+  background: linear-gradient(135deg, var(--brand-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -828,8 +839,6 @@
 .metric-icon-box {
   width: 36px;
   height: 36px;
-  background: rgba(189, 29, 176, 0.1);
-  border: 1px solid rgba(189, 29, 176, 0.2);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -967,24 +976,16 @@
   margin-bottom: 64px;
 }
 
-.social-proof-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(189, 29, 176, 0.08);
-  border: 1px solid rgba(189, 29, 176, 0.2);
-  border-radius: 100px;
-  padding: 5px 14px;
-  margin-bottom: 20px;
+.social-proof-container p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 24px;
 }
 
-.social-proof-badge-text {
-  color: var(--brand-color);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
+
+
 
 .social-proof-title {
   color: #F1F5F9;
@@ -996,21 +997,10 @@
 }
 
 .social-proof-title-highlight {
-  background: linear-gradient(135deg, #A307E5 100%);
+  background: linear-gradient(135deg, var(--brand-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.results-metrics-bar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1px;
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  margin-bottom: 48px;
 }
 
 @media (min-width: 1024px) {
@@ -1062,7 +1052,7 @@
 .testimonial-stars {
   display: flex;
   gap: 3px;
-  margin-bottom: 16px;
+  margin: 20px 0;
 }
 
 .testimonial-text {
@@ -1263,8 +1253,6 @@
 .pricing-icon-box {
   width: 48px;
   height: 48px;
-  background: rgba(189, 29, 176, 0.15);
-  border: 1px solid rgba(189, 29, 176, 0.30);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -1372,8 +1360,7 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: rgba(189, 29, 176, 0.18);
-  border: 1px solid rgba(189, 29, 176, 0.30);
+  color: var(--brand-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1442,6 +1429,7 @@
 .pricing-footer-highlight {
   color: #F1F5F9;
   font-weight: 600;
+  text-decoration:underline;
 }
 /* FAQ Section Styles */
 .faq-section {
@@ -1504,7 +1492,7 @@
 }
 
 .faq-title-gradient-text {
-  background: linear-gradient(135deg, #A307E5 100%);
+  background: linear-gradient(135deg, var(--brand-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
