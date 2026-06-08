@@ -19,7 +19,7 @@ export default function App() {
       <SocialProofSection />
       <PricingSection />
       <FAQSection />
-      <CTASection />
+      {/* <CTASection /> */}
       <Footer />
     </div>
   );
