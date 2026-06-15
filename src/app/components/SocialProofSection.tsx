@@ -52,9 +52,6 @@ export function SocialProofSection() {
               Meus Alunos?
             </span>
           </h2>
-          {/* <p>
-            Conheça os depoimentos e experiências de alunos que passaram pelas minhas aulas.
-          </p> */}
         </div>
 
         {/* Testimonials */}

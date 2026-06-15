@@ -42,6 +42,7 @@ function CodeSnippet({ code }: CodeSnippetProps) {
 
 const BLOCKS = [
   {
+    url:'https://hotmart.com/pt-br/marketplace/produtos/bloco-1-logica-de-programacao/P101799744W',
     number: '01',
     icon: GitBranch,
     label: 'Bloco 1',
@@ -58,14 +59,15 @@ const BLOCKS = [
     tag: 'Fundamento Computacional',
   },
   {
+    url:'https://hotmart.com/pt-br/marketplace/produtos/bloco-2-introducao-ao-python/Q101752453E',
     number: '02',
     icon: Terminal,
     label: 'Bloco 2',
     title: 'Python Estruturado',
     desc: 'Domine Python com orientação a objetos, módulos, testes e as melhores práticas de código limpo.',
     skills: [
-      { label: 'OOP', value: 88 },
-      { label: 'Módulos & Libs', value: 95 },
+      { label: 'Programação Orientada a Objetos', value: 88 },
+      { label: 'Módulos & Bibliotecas', value: 95 },
     ],
     code: ['class Engineer:', '  def __init__(self):', '    self.ready = True', '', '# ✓ 200 OK'],
     accent: '#3B82F6',
@@ -73,6 +75,7 @@ const BLOCKS = [
     tag: 'Introdução a Linguagem',
   },
   {
+    url:'https://hotmart.com/pt-br/marketplace/produtos/bloco-3-desenvolvimento-web-com-django/P101755269N',
     number: '03',
     icon: Globe,
     label: 'Bloco 3',
@@ -80,7 +83,7 @@ const BLOCKS = [
     desc: 'Construa aplicações web completas com Django, APIs RESTful, banco de dados e deploy em produção.',
     skills: [
       { label: 'Django REST', value: 90 },
-      { label: 'PostgreSQL', value: 80 },
+      { label: 'SQL Lite', value: 80 },
     ],
     code: ['@login_required', 'def dashboard(req):', '    # 200 OK ✓', '    return render(...)'],
     accent: '#8B5CF6',
@@ -88,6 +91,7 @@ const BLOCKS = [
     tag: 'Backend',
   },
   {
+    url:'https://hotmart.com/pt-br/marketplace/produtos/bloco-4-analise-de-dados-e-ia/Q101760178L',
     number: '04',
     icon: Brain,
     label: 'Bloco 4',
@@ -133,7 +137,7 @@ export function JourneySection() {
           {BLOCKS.map((block) => {
             const Icon = block.icon;
             return (
-              <div
+              <a href={block.url} target="_blank" rel="noopener noreferrer"
                 key={block.number}
                 data-block={block.number}
                 className={`bento-item col-span-1 ${block.colSpan}`}
@@ -200,7 +204,7 @@ export function JourneySection() {
                     <ProgressBar key={skill.label} label={skill.label} value={0}/>
                   ))}
                   </div>
-              </div>
+              </a>
             );
           })}
         </div>

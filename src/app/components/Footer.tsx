@@ -113,7 +113,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="footer-bottom-bar">
           <p className="footer-copyright">
-            © 2026 Amanda Xavier. Todos os direitos reservados.
+            © 2025 Amanda Xavier. Todos os direitos reservados.
           </p>
           <div className="footer-bottom-links">
             {['Termos de Uso', 'Privacidade', 'Política de Reembolso'].map((item) => (
