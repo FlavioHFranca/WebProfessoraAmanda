@@ -4,6 +4,7 @@ import { Check, Globe, Brain, ArrowRight, Shield, Zap, GitBranch, Terminal } fro
 const TIERS = [
   {
     id: 'web',
+    url: 'https://hotmart.com/pt-BR/club/amanda-xavier',
     tag: 'Jornada Web',
     name: 'Jornada Web',
     description: 'Para quem quer construir aplicações web completas e trabalhar como desenvolvedor full-stack.',
@@ -31,6 +32,7 @@ const TIERS = [
   },
   {
     id: 'dados',
+    url: 'https://hotmart.com/pt-BR/club/amanda-xavier',
     tag: 'Jornada de Dados',
     name: 'Jornada de Dados',
     description: 'Para quem quer dominar Inteligência Artificial e se tornar especialista em Data Science.',
@@ -161,7 +163,7 @@ export function PricingSection() {
 
                 {/* CTA */}
                 <a
-                  href="#"
+                  href="https://hotmart.com/pt-br/club/amanda-xavier" target="_blank"
                   className="btn-pricing-main"
                   style={{ boxShadow: `0 0 24px ${tier.glowColor}` }}
                   onMouseEnter={(e) => {
