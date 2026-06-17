@@ -19,4 +19,8 @@ Dê uma olhada ser o docker desktop está aberto e com o serviço rodando antes 
 ```bash
 git clone
 cd WebProfessoraAmanda
+# Caso ainda não tenha as dependencias do vite, instale com o comando logo abaixo.
+npm install 
+npm run dev
 ```
+
