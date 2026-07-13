@@ -35,7 +35,7 @@ const SOCIALS = [
   { Icon: Instagram, href: 'https://www.instagram.com/prof.amanda.xavier/', label: 'Instagram' },
   { Icon: Linkedin, href: 'https://www.linkedin.com/in/prof-amanda-xavier/', label: 'LinkedIn' },
   { Icon: FileUser, href: 'https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8189271J3', label: 'Lattes' },
-  { Icon: Mail, href: 'mailto:[EMAIL_ADDRESS]', label: 'Email' },
+  { Icon: Mail, href: 'mailto:professoraamanda84@gmail.com', label: 'Email' },
 ];
 
 export function Footer() {
@@ -102,10 +102,10 @@ export function Footer() {
               ))}
             </div>
             <a
-              href="mailto:[EMAIL_ADDRESS]"
+              href="mailto:professoraamanda84@gmail.com"
               className="footer-email-link"
             >
-              [EMAIL_ADDRESS]
+              professoraamanda84@gmail.com
             </a>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Award, BookOpen, Users, Star, ExternalLink } from 'lucide-react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import fotoSobreEla from '@/styles/img/sobreela.png';
 
 const METRICS = [

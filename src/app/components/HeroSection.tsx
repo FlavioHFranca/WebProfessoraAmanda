@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Users, Code, CircleCheckBig, } from 'lucide-react';
-import fotoHero from '@/styles/img/chamandoAluno.png';
+import { Users, Code, CircleCheckBig, HandshakeIcon, NotepadText } from 'lucide-react';
+import fotoHero from '/capa-social.png';
 
 const TERMINAL_LINES = [
   { delay: 0, text: '$ python jornada_engenharia.py', color: '#079e34ff' },
@@ -97,10 +97,10 @@ export function HeroSection() {
             {/* CTAs */}
             <div className="hero-cta-group">
               <a href="https://api.whatsapp.com/send/?phone=5565996415991&text=Quero+uma+mentoria+especializada+da+professora+Amanda!&type=phone_number&app_absent=" className="btn-hero-primary" target="_blank">
-                <Code size={18} />Quero Agendar uma Aula
+                <Code size={18} />Agendar aula experimental
               </a>
-              <a href="https://chat.whatsapp.com/KHvRMshZNx6KyOTYD4qRbx" className="btn-hero-secondary" target="_blank">
-                <Users size={18} />Lista de Espera
+              <a href="#jornada" className="btn-hero-secondary">
+                <NotepadText size={18} />Ver aulas
               </a>
             </div>
 
@@ -126,10 +126,18 @@ export function HeroSection() {
                 </div>
               </div>
               <div className="hero-badge">
-              <CircleCheckBig size={20} color="#13f622"  />
+              <CircleCheckBig size={20} color="#a313f6ff"  />
               <span className="hero-badge-text">
                 Primeira Aula Experimental | Horários Flexíveis
               </span>
+              
+        </div>
+        <div className="hero-badge">
+              <HandshakeIcon size={20} color="#a313f6ff"  />
+              <span className="hero-badge-text">
+                Ambiente seguro e inclusivo para Mulheres e LGBTQIAPN+
+              </span>
+              
         </div>
               {/* <div className="hero-stats-bar">
               {STATS.map((stat, i) => (

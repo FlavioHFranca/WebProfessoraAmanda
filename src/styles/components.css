@@ -251,10 +251,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(189, 29, 176, 0.25);
   border-radius: 100px;
   padding: 6px 16px;
-  margin: 40px 0;
+  margin-top: 15px;
 }
 
 .hero-badge-text {
