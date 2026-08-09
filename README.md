@@ -1,5 +1,20 @@
 # Este projeto está totalmente containerizado, com ele garante que rodará com as mesmas dependências em qualquer máquina.
 
+![screenshoot do projeto](./public/screeshoot-projeto.png)
+
+## Detalhes
+
+A página Web Professora Amanda é um projeto completo em React com Vite, focado em acessibilidade e design moderno.
+
+### Tecnologias
+
+- **React**
+- **Vite**
+- **TypeScript**
+- **Tailwind CSS**
+- **Docker**
+- **Dockerfile**
+
 ### Requisitos
 
 Antes de começar, você precisa ter instalado na sua máquina:
@@ -20,7 +35,6 @@ Dê uma olhada ser o docker desktop está aberto e com o serviço rodando antes 
 git clone
 cd WebProfessoraAmanda
 # Caso ainda não tenha as dependencias do vite, instale com o comando logo abaixo.
-npm install 
+npm install
 npm run dev
 ```
-
